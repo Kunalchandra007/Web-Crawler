@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  crawler4j:
+    build: .
+    container_name: crawler4j-env
+    volumes:
+      - .:/app
+      - gradle-cache:/root/.gradle
+    environment:
+      - JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+      - GRADLE_OPTS=-Xmx2g
+    working_dir: /app
+    command: bash -c "./gradlew build && ./gradlew test"
+    
+  # Optional: PostgreSQL for database examples
+  postgres:
+    image: postgres:13
+    container_name: crawler4j-postgres
+    environment:
+      POSTGRES_DB: crawler4j
+      POSTGRES_USER: crawler4j
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    profiles:
+      - database
+
+volumes:
+  gradle-cache:
+  postgres-data:
