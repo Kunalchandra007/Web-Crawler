@@ -1,9 +1,4 @@
 # 🕷️ Crawlerbykc - Open Source Web Crawler for Java
-
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/your-repo/crawlerbykc)
-[![Java Version](https://img.shields.io/badge/java-8%2B-orange.svg)](https://openjdk.java.net/)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-
 **Crawlerbykc** is a powerful, multi-threaded web crawler for Java applications. Originally based on crawler4j, it has been completely refactored and enhanced to provide a robust, scalable, and easy-to-use web crawling solution.
 
 ## 📋 Table of Contents
