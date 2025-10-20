@@ -568,5 +568,3 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 **Crawlerbykc** - Making web crawling simple, powerful, and reliable! 🕷️
 
 ---
-
-*Last updated: October 18, 2025*
